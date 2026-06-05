@@ -75,3 +75,73 @@ body {
      width:35%;
     max-width:136px;
 }
+
+.filters{
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.filters::webkit-scrollbar{
+    display: none;
+}
+
+.filter-btn{
+    background: white;
+    border: 1px solid #E5E5E5;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.books-section{
+    padding: 0 16px 24px;
+}
+
+.books-section h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.books-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 12px;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-cover{
+    width: 100%;
+    aspect-ratio: 109 / 167;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.book-title{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.book-author{
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.book-meta{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
