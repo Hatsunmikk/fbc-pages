@@ -1,6 +1,13 @@
 const booksGrid = document.querySelector(".books-grid");
 const ratingFilter = document.getElementById("rating-filter");
+const typeFilter = document.getElementById("type-filter");
+const genreFilter = document.getElementById("genre-filter");
+const sortFilter = document.getElementById("sort-filter");
+
 let ratingActive = false;
+let selectedType = "all";
+let selectedGenre = "all";
+let selectedSort = "default";
 
 
 function renderBooks(bookList){
@@ -33,7 +40,68 @@ function renderBooks(bookList){
     });
 }
 
+function applyFilters(){
+    let filteredBooks = [...books];
+
+    if(ratingActive){
+        filteredBooks = filteredBooks.filter(
+            book => book.rating >= 4
+        );
+    }
+
+    if(selectedType !== "all"){
+        filteredBooks = filteredBooks.filter(
+            book => book.type === selectedType
+        );
+    }
+    if(selectedGenre !== "all"){
+        filteredBooks = filteredBooks.filter(
+            book => book.genre.includes(selectedGenre)
+        );
+    }
+    if(selectedSort === "title-asc"){
+        filteredBooks.sort((a, b) =>
+            a.title.localeCompare(b.title)
+    );
+    }
+    if(selectedSort === "title-desc"){
+       filteredBooks.sort((a, b) =>
+            b.title.localeCompare(a.title)
+    );
+    }
+
+    if(selectedSort === "rating-desc"){
+        filteredBooks.sort((a, b) =>
+            b.rating - a.rating
+        );
+    }
+    renderBooks(filteredBooks);
+}
+
+function populateGenres(){
+    const genres = new Set();
+
+    books.forEach(book =>{
+
+        book.genre.split(",").forEach(genre => {
+
+            if(genre.trim()){
+                genres.add(genre.trim());
+            }
+        });
+    });
+
+    genres.forEach(genre => {
+        genreFilter.innerHTML += `
+        <option value="${genre}">
+        ${genre}
+        </option>
+        `;
+    });
+}
+
 renderBooks(books);
+populateGenres();
 
 ratingFilter.addEventListener("click", () => {
     
@@ -41,12 +109,23 @@ ratingFilter.addEventListener("click", () => {
 
     ratingFilter.classList.toggle("active");
 
-    if(ratingActive){
+    applyFilters();
+});
 
-        const filteredBooks = books.filter(book => book.rating >= 4);
+typeFilter.addEventListener("change", e => {
+    selectedType = e.target.value;
 
-        renderBooks(filteredBooks);
-    } else {
-        renderBooks(books);
-    }
-})
+    applyFilters();
+});
+
+genreFilter.addEventListener("change", e => {
+    selectedGenre = e.target.value;
+
+    applyFilters();
+});
+
+sortFilter.addEventListener("change", e => {
+    selectedSort = e.target.value;
+
+    applyFilters();
+});
