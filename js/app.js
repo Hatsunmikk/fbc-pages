@@ -9,6 +9,17 @@ let selectedType = "all";
 let selectedGenre = "all";
 let selectedSort = "default";
 
+function attachCardListeners(){
+    document.querySelectorAll(".book-card")
+            .forEach(card => {
+                card.addEventListener("click", () => {
+                    const bookId = card.dataset.id;
+
+                    window.location.href = `details.html?id=${bookId}`;
+                });
+            });
+}
+
 
 function renderBooks(bookList){
     booksGrid.innerHTML = "";
@@ -38,15 +49,7 @@ function renderBooks(bookList){
         </div>
         `;
 
-        document.querySelectorAll(".book-card").forEach(card => {
-            
-            card.addEventListener("click", () => {
-               
-                const bookId = card.dataset.id;
-
-                window.location.href = `details.html?id=${bookId}`;
-            });
-        })
+        attachCardListeners();
     });
 }
 

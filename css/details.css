@@ -1,0 +1,39 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.details-hero{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.details-cover{
+    width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.back-btn{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.share-btn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.details.info {
+    text-align: center;
+    padding: 20px;
+}
