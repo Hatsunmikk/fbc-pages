@@ -37,6 +37,16 @@ function renderBooks(bookList){
 
         </div>
         `;
+
+        document.querySelectorAll(".book-card").forEach(card => {
+            
+            card.addEventListener("click", () => {
+               
+                const bookId = card.dataset.id;
+
+                window.location.href = `details.html?id=${bookId}`;
+            });
+        })
     });
 }
 
