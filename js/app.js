@@ -1,13 +1,16 @@
 const booksGrid = document.querySelector(".books-grid");
+const ratingFilter = document.getElementById("rating-filter");
+let ratingActive = false;
 
 
-function renderBooks(){
+function renderBooks(bookList){
     booksGrid.innerHTML = "";
 
-    books.forEach(book => {
+    bookList.forEach(book => {
 
         booksGrid.innerHTML += `
-        <div class="book-card">
+        <div class="book-card"
+              data-id="${book.id}">
 
         <img src="${book.image}"
              alt="${book.title}"
@@ -30,4 +33,20 @@ function renderBooks(){
     });
 }
 
-renderBooks();
+renderBooks(books);
+
+ratingFilter.addEventListener("click", () => {
+    
+    ratingActive = !ratingActive;
+
+    ratingFilter.classList.toggle("active");
+
+    if(ratingActive){
+
+        const filteredBooks = books.filter(book => book.rating >= 4);
+
+        renderBooks(filteredBooks);
+    } else {
+        renderBooks(books);
+    }
+})
