@@ -47,10 +47,24 @@
           </section>
 
           <section class="filters">
+            
+            <select id="sort-filter" class="filter-select">
+                <option value="default">sort</option>
+                <option value="title-asc">A-Z</option>
+                <option value="title-desc">Z-A</option>
+                <option value="rating-desc">highest rated</option>
+            </select>
 
-            <button class="filter-btn" id="sort-filter">sort ▼</button>
-            <button class="filter-btn" id="type-filter">fic/nonfic</button>
-            <button class="filter-btn" id="genre-filter">genres</button>
+            <select id="type-filter" class="filter-select">
+                <option value="all">fic/nonfic</option>
+                <option value="Fiction">fiction</option>
+                <option value="Non Fiction">non-fiction</option>
+            </select>
+
+            <select id="genre-filter" class="filter-select">
+                <option value="all">genres</option>
+            </select>
+            
             <button class="filter-btn" id="rating-filter">rating: 4+</button>
 
           </section>
@@ -63,6 +77,44 @@
 
 
           </section>
+
+          <section class="end-books">
+            
+              <img src="./assets/icons/barrier.svg"
+                   alt=""
+                   class="end-icon">
+
+          </section>
+
+          <nav class="bottom-nav">
+            
+            <div class="nav-item">
+                <span>📖</span>
+                <p>read</p>
+            </div>
+
+            <div class="nav-item active-nav">
+                <span>📚</span>
+                <p>borrow</p>
+            </div>
+
+            <div class="nav-item">
+                <span>🗺️</span>
+                <p>explore</p>
+            </div>
+
+            <div class="nav-item">
+                <span>👥</span>
+                <p>meets</p>
+            </div>
+
+            <div class="nav-item">
+                <span>💬</span>
+                <p>chat</p>
+            </div>
+
+          </nav>
+
         </div>
         <script src="./js/books.js"></script>
        <script src="./js/app.js"></script>
