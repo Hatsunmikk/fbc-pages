@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.details-hero{
+.hero-section{
     position: relative;
     padding: 20px;
     display: flex;
@@ -33,7 +33,36 @@ body {
     cursor: pointer;
 }
 
-.details.info {
-    text-align: center;
+.book-header {
     padding: 20px;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pill {
+    background: white;
+    border-radius: 999px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.book-header{
+    padding: 20px;
+}
+
+.book-header h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
 }
