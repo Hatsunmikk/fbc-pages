@@ -91,17 +91,24 @@ body {
 .filter-select, .filter-btn{
     background: white;
     border: 1px solid #E5E5E5;
-    border-radius: 12px;
-    padding: 10px 14px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 14px;
     font-family: inherit;
     font-size: 14px;
     white-space: nowrap;
     cursor: pointer;
     color: #555;
+    flex-shrink: 0;
 }
 
 .filter-select {
     appearance: none;
+    -webkit-appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M2 4l4 4 4-4' fill='%23666'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
 }
 
 .books-section{
