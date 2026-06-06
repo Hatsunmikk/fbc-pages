@@ -1,21 +1,5 @@
 const booksGrid = document.querySelector(".books-grid");
 
-const books = [
-    {
-        title: "Wellness",
-        author: "Nathan Hill",
-        rating: 4.4,
-        likes: "92%",
-        image: "./assets/books/wellness.png"
-    },
-    {
-        title: "Demon Copperhead",
-        author: "Barbara Kingsolver",
-        rating: 4.5,
-        likes: "95%",
-        image: "./assets/books/demon.png"
-    }
-];
 
 function renderBooks(){
     booksGrid.innerHTML = "";
@@ -37,7 +21,6 @@ function renderBooks(){
 
             <span>⭐ ${book.rating}</span>
 
-            <span>👍 ${book.likes}</span
 
         </div>
 

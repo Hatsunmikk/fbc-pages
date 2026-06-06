@@ -84,7 +84,7 @@ body {
     scrollbar-width: none;
 }
 
-.filters::webkit-scrollbar{
+.filters::-webkit-scrollbar{
     display: none;
 }
 
