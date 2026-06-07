@@ -381,14 +381,131 @@ bookDetails.innerHTML = `
 
     </div>
 
-    <div class="review-summary">
+    <div class="review-box">
 
-        <div class="review-score">
-            ⭐ ${book.rating}
+        <div class="community-reviews">
+            Community Reviews
         </div>
 
-        <div class="review-placeholder">
-            Review insights coming soon
+        <div class="review-header">
+
+            <div class="stars">
+                ★ ★ ★ ★ ☆
+            </div>
+
+            <div class="review-rating">
+                ${book.rating}
+            </div>
+
+            <div class="review-counts">
+                21,289 ratings · 5,429 reviews
+            </div>
+
+        </div>
+
+        <div class="rating-bars">
+
+            <div class="rating-row">
+
+                <span class="rating-label">
+                    5 stars
+                </span>
+
+                <div class="bar-track">
+                    <div
+                        class="bar-fill"
+                        style="width:47%"
+                    ></div>
+                </div>
+
+                <span class="rating-value">
+                    10,049 (47%)
+                </span>
+
+            </div>
+
+            <div class="rating-row">
+
+                <span class="rating-label">
+                    4 stars
+                </span>
+
+                <div class="bar-track">
+                    <div
+                        class="bar-fill"
+                        style="width:30%"
+                    ></div>
+                </div>
+
+                <span class="rating-value">
+                    6,544 (30%)
+                </span>
+
+            </div>
+
+            <div class="rating-row">
+
+                <span class="rating-label">
+                    3 stars
+                </span>
+
+                <div
+                    class="bar-track"
+                >
+                    <div
+                        class="bar-fill"
+                        style="width:14%"
+                    ></div>
+                </div>
+
+                <span class="rating-value">
+                    3,156 (14%)
+                </span>
+
+            </div>
+
+            <div class="rating-row">
+
+                <span class="rating-label">
+                    2 stars
+                </span>
+
+                <div
+                    class="bar-track"
+                >
+                    <div
+                        class="bar-fill"
+                        style="width:5%"
+                    ></div>
+                </div>
+
+                <span class="rating-value">
+                    1,105 (5%)
+                </span>
+
+            </div>
+
+            <div class="rating-row">
+
+                <span class="rating-label">
+                    1 star
+                </span>
+
+                <div
+                    class="bar-track"
+                >
+                    <div
+                        class="bar-fill"
+                        style="width:2%"
+                    ></div>
+                </div>
+
+                <span class="rating-value">
+                    435 (2%)
+                </span>
+
+            </div>
+
         </div>
 
     </div>

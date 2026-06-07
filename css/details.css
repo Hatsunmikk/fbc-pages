@@ -287,3 +287,85 @@ body {
     font-weight: 700;
     font-size: 14px;
 }
+
+.review-box{
+    padding: 12px;
+    background: white;
+
+}
+
+.community-reviews{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 14px;
+}
+
+.review-header {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   margin-bottom: 20px;
+   flex-wrap: nowrap;
+}
+
+.stars {
+   color: #d77a28;
+   font-size: 28px;
+   letter-spacing: 2px;
+   white-space: nowrap;
+   flex-shrink: 0;
+}
+
+.review-rating{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.review-counts{
+    font-size: 12px;
+    color: #777;
+    flex: 1;
+    display: flex;
+}
+
+.rating-bars{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.rating-row{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rating-label{
+    width: 50px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.bar-track{
+    flex: 1;
+    height: 10px;
+    background: #ececec;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.bar-fill{
+    height: 100%;
+    background: #d77a28;
+    border-radius: 999px;
+}
+
+.rating-value{
+    width: 80px;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
+
