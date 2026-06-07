@@ -143,12 +143,24 @@ bookDetails.innerHTML = `
 
     <div class="header-right">
 
-        <button>🔍</button>
-
-        <button>+</button>
-
-        <button>👤</button>
-
+          <button>
+                    
+            <img src="./assets/icons/search.png"
+                 alt="search-icon"
+                 class="search-btn">
+          </button>
+               
+          <button>
+             <img src="./assets/icons/add.png"
+                  alt="add-icon"
+                  class="add-btn">
+          </button>
+          <button>
+             <img src="./assets/icons/profile.png"
+                 alt="pfp-icon"
+                 class="profile-btn">
+                         
+          </button>
     </div>
 
 </header>

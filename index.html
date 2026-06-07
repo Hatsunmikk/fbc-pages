@@ -27,9 +27,22 @@
             </div>
 
             <div class="header-right">
-                <button>🔍</button>
-                <button>+</button>
-                <button>👤</button>
+                <button>
+                    <img src="./assets/icons/search.png"
+                         alt="search-icon"
+                         class="search-btn">
+                </button>
+                <button>
+                    <img src="./assets/icons/add.png"
+                         alt="add-icon"
+                         class="add-btn">
+                </button>
+                <button>
+                    <img src="./assets/icons/profile.png"
+                         alt="pfp-icon"
+                         class="profile-btn">
+                         
+                </button>
             </div>
 
           </header>
@@ -48,12 +61,22 @@
 
           <section class="filters">
             
-            <select id="sort-filter" class="filter-select">
-                <option value="default">sort</option>
-                <option value="title-asc">A-Z</option>
-                <option value="title-desc">Z-A</option>
-                <option value="rating-desc">highest rated</option>
-            </select>
+            <div class="filter-wrapper">
+
+    <img
+        src="./assets/icons/sort1.png"
+        alt=""
+        class="filter-icon-left"
+    >
+
+    <select id="sort-filter" class="filter-select sort-select">
+        <option value="default">sort</option>
+        <option value="title-asc">A-Z</option>
+        <option value="title-desc">Z-A</option>
+        <option value="rating-desc">highest rated</option>
+    </select>
+
+</div>
 
             <select id="type-filter" class="filter-select">
                 <option value="all">fic/nonfic</option>
@@ -89,27 +112,45 @@
           <nav class="bottom-nav">
             
             <div class="nav-item">
-                <span>📖</span>
+                <img src="./assets/icons/read-1.png"
+                  alt="read"
+                  class="read1-icon">
                 <p>read</p>
             </div>
 
+            <div class="nav-divider"></div>
+
             <div class="nav-item active-nav">
-                <span>📚</span>
+                <img src="./assets/icons/borrow1.png"
+                  alt="borrow"
+                  class="borrow1-icon">
                 <p>borrow</p>
             </div>
 
+            <div class="nav-divider"></div>
+
             <div class="nav-item">
-                <span>🗺️</span>
+                <img src="./assets/icons/explore.png"
+                  alt="explore"
+                  class="explore-icon">
                 <p>explore</p>
             </div>
 
+            <div class="nav-divider"></div>
+
             <div class="nav-item">
-                <span>👥</span>
+                <img src="./assets/icons/meet-1.png"
+                  alt="meets"
+                  class="meet1-icon">
                 <p>meets</p>
             </div>
 
+            <div class="nav-divider"></div>
+
             <div class="nav-item">
-                <span>💬</span>
+                <img src="./assets/icons/chat.png"
+                  alt="chat"
+                  class="chat-icon">
                 <p>chat</p>
             </div>
 

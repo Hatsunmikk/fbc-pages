@@ -34,23 +34,59 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 22px 12px 10px;
+    position: sticky;
+    top: 0;
+    background: white;
+    
 }
 
 .header-left h1{
     font-size: 24px;
     font-weight: 700;
+    line-height: 1.1;
+    color: #444;
 }
 
 .header-left p{
     color: #f45b4f;
     font-size: 14px;
     font-weight: 600;
+    margin-top: 2px;
 }
 
 .header-right{
     display: flex;
-    gap: 12px;
+    gap: 8px;
+    align-items: center;
+}
+
+.header-right button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-btn {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.add-btn {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.profile-btn {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
 }
 
 .banner{
@@ -82,10 +118,27 @@ body {
     padding: 16px;
     overflow-x: auto;
     scrollbar-width: none;
+    
 }
 
 .filters::-webkit-scrollbar{
     display: none;
+}
+
+.filter-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.filter-icon-left{
+    position: absolute;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    z-index: 2
 }
 
 .filter-select, .filter-btn{
@@ -105,14 +158,27 @@ body {
 .filter-select {
     appearance: none;
     -webkit-appearance: none;
-    padding-right: 30px;
+    padding-right: 32px;
+    padding-left: 36px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background: white;
+    font-size: 14px;
+    color: #555;
+    font-family: inherit;
+    cursor: pointer;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M2 4l4 4 4-4' fill='%23666'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 10px center;
 }
 
+.sort-select{
+    width: 100px;
+}
+
 .books-section{
-    padding: 0 16px 24px;
+    padding: 0 16px 100px;
 }
 
 .books-section h2{
@@ -163,7 +229,8 @@ body {
 
 .book-meta{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 5px;
     font-size: 12px;
 }
 
@@ -178,7 +245,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 80px 20px 40px;
+    padding: 80px 20px 120px;
     min-height: 50px;
     justify-content: center;
 }
@@ -187,22 +254,50 @@ body {
 .bottom-nav {
     position: sticky;
     bottom: 0;
+    left: 0;
+    right: 0;
+    height: 67px;
     background: white;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #e5e5e5;
     display: flex;
     justify-content: space-around;
-    padding: 12px 0;
+    align-items: center;
+    z-index: 1000;
 }
 
 .nav-item {
+    position: relative;
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     gap: 4px;
     font-size: 12px;
-    color: #999;
+    color: #cfcfcf;
+}
+
+.nav-item img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
 }
 
 .active-nav {
     color: #f45b4f;
+}
+
+.active-nav::before{
+    content: "";
+    position: absolute;
+    top: -12px;
+    width: 64px;
+    height: 4px;
+    background: #f45b4f;
+    border-radius: 999px;
+}
+
+.nav-divider{
+    width: 1px;
+    height: 32px;
+    background: #e5e5e5;
 }

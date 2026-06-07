@@ -40,7 +40,17 @@ function renderBooks(bookList){
 
         <div class="book-meta">
 
-            <span>⭐ ${book.rating}</span>
+            <span>
+             <img src="./assets/icons/goodreads.png"
+                  alt="goodreads-rating"
+                  class="goodreads-icon">
+             ${book.rating}</span>
+            <span>
+             <img src="./assets/icons/likes.png"
+                  alt="likes"
+                  class="likes-icon">
+             92%
+             </span>
 
 
         </div>
