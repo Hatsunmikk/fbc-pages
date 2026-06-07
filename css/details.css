@@ -161,10 +161,11 @@ body {
 }
 
 .tag {
-    padding: 8px 14px;
+    padding: 10px 14px;
     border-radius: 999px;
     background: #f4f4f4;
     font-size: 14px;
+    height: 40px;
 }
 
 .libraries-list{
@@ -369,3 +370,75 @@ body {
     text-align: right;
 }
 
+.libraries-grid{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.library-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.library-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.library-item p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.details-nav{
+    position: sticky;
+    bottom: 0;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    height: 78px;
+    z-index: 100;
+}
+
+.details-nav-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    position: relative;
+}
+
+.active-detail-nav::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
+    height: 4px;
+    background: #000;
+    border-radius: 999px;
+}
+
+.details-nav-divider{
+    width: 1px;
+    height: 40px;
+    background: #ddd;
+}
+
+.nav-icon{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}

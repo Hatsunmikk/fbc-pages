@@ -542,49 +542,95 @@ bookDetails.innerHTML = `
 
     <div class="section-title">
 
-        <h2>Libraries</h2>
+        <h2>Available to Borrow</h2>
 
         <div class="section-line"></div>
 
     </div>
 
-    <div class="libraries-list">
+    <div class="libraries-grid">
 
-        <div class="library-card">
-            Library information unavailable
+        <div class="library-item">
+
+            <img
+                src="./assets/images/fbc-logo.png"
+                alt=""
+                class="library-logo"
+            >
+
+            <p>Fictional Library</p>
+
+        </div>
+
+        <div class="library-item">
+
+            <img
+                src="./assets/images/fbc-logo.png"
+                alt=""
+                class="library-logo"
+            >
+
+            <p>Vidur's Library</p>
+
+        </div>
+
+        <div class="library-item">
+
+            <img
+                src="./assets/images/fbc-logo.png"
+                alt=""
+                class="library-logo"
+            >
+
+            <p>Sumit's Library</p>
+
         </div>
 
     </div>
-
 </section>
 
 </div>
 
-<nav class="bottom-nav">
+<nav class="details-nav">
 
-    <div class="nav-item">
-        <span>📖</span>
-        <p>read</p>
+    <div class="details-nav-item active-detail-nav">
+
+        <img
+            src="./assets/icons/borrow-2.png"
+            alt=""
+            class="nav-icon"
+        >
+
+        <span>Borrow</span>
+
     </div>
 
-    <div class="nav-item active-nav">
-        <span>📚</span>
-        <p>borrow</p>
+    <div class="details-nav-divider"></div>
+
+    <div class="details-nav-item">
+
+        <img
+            src="./assets/icons/read-2.png"
+            alt=""
+            class="nav-icon"
+        >
+
+        <span>Read</span>
+
     </div>
 
-    <div class="nav-item">
-        <span>🗺️</span>
-        <p>explore</p>
-    </div>
+    <div class="details-nav-divider"></div>
 
-    <div class="nav-item">
-        <span>👥</span>
-        <p>meets</p>
-    </div>
+    <div class="details-nav-item">
 
-    <div class="nav-item">
-        <span>💬</span>
-        <p>chat</p>
+        <img
+            src="./assets/icons/meet-2.png"
+            alt=""
+            class="nav-icon"
+        >
+
+        <span>Meet</span>
+
     </div>
 
 </nav>
