@@ -218,6 +218,8 @@ bookDetails.innerHTML = `
 
 </section>
 
+<div class="details-content">
+
 <section class="book-header">
 
     <h1>${book.title}</h1>
@@ -240,9 +242,21 @@ bookDetails.innerHTML = `
 
     </div>
 
-    <p>
-        Description unavailable in dataset.
-    </p>
+    <div class="about-content">
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec id condimentum leo. Nulla facilisi.
+            Nam sed facilisis nulla. Aenean viverra feugiat dui,
+            eget interdum turpis auctor ut.
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec id condimentum leo. Nulla facilisi.
+            Nam sed facilisis nulla. Aenean viverra feugiat dui,
+            eget interdum turpis auctor ut.
+        </p>
+
+    </div>
 
 </section>
 
@@ -256,13 +270,35 @@ bookDetails.innerHTML = `
 
     </div>
 
-    <p>
-        ${book.author}
+    <div class="author-top">
+
+        <img
+            src="./assets/images/author.avif"
+            alt="${book.author}"
+            class="author-image"
+        >
+
+        <p class="author-bio">
+
+            ${book.author} is a celebrated author
+            whose work has been widely read and
+            discussed by readers worldwide.
+
+        </p>
+
+    </div>
+
+    <p class="author-extra">
+
+        Additional author information can be
+        displayed here when available from
+        the dataset.
+
     </p>
 
 </section>
 
-<section class="details-section">
+<section class="detail-section">
 
 <div class="section-title">
 
@@ -365,6 +401,8 @@ bookDetails.innerHTML = `
     </div>
 
 </section>
+
+</div>
 
 <nav class="bottom-nav">
 
