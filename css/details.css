@@ -4,14 +4,21 @@ body {
 
 .hero-section{
     position: relative;
-    padding: 20px;
+    padding: 28px 12px 20px;
     display: flex;
     justify-content: center;
+    min-height: 368px;
+    padding-top: 50px;
+    align-items: flex-start;
+    gap: 18px;
+
 }
 
 .details-cover{
-    width: 180px;
+    width: 195px;
+    height: 292px;
     border-radius: 12px;
+    object-fit: cover;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
@@ -22,6 +29,15 @@ body {
     border: none;
     background: white;
     cursor: pointer;
+    border-radius: 100px;
+    height: 28px;
+    width: 28px;
+}
+
+.back-btn-icon {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 4px;
 }
 
 .share-btn {
@@ -31,6 +47,14 @@ body {
     border: none;
     background: white;
     cursor: pointer;
+    border-radius: 100px;
+    height: 28px;
+    width: 28px;
+}
+
+.share-btn-icon {
+    padding: 4px;
+    padding-top: 6px;
 }
 
 .book-header {
@@ -47,15 +71,29 @@ body {
     width: 120px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .pill {
     background: white;
     border-radius: 999px;
-    padding: 10px;
+    padding: 0 10px;
     text-align: center;
     font-size: 14px;
+    width: 114px;
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.reviewers-pill {
+
+    flex-direction: column;
+
+    line-height: 1.1;
 }
 
 .book-header{
@@ -65,4 +103,99 @@ body {
 .book-header h1 {
     font-size: 22px;
     margin-bottom: 8px;
+}
+
+.details-section{
+    padding: 0 20px 24px;
+}
+
+.section-title{
+    display:flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.section-title h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-line{
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.details-section p {
+    line-height: 1.6;
+}
+
+.review-summary{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.review-score{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.review-placeholder{
+    color: #666;
+}
+
+.tags-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #f4f4f4;
+    font-size: 14px;
+}
+
+.libraries-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.library-card{
+    padding: 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+}
+
+.borrow-btn {
+
+    position: fixed;
+
+    right: 16px;
+
+    bottom: 90px;
+
+    width: 105px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: #d24134;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.2);
+
+    z-index: 999;
 }

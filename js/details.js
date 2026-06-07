@@ -131,17 +131,43 @@ function lightenColor(color) {
 
 bookDetails.innerHTML = `
 
+<header class="header">
+
+    <div class="header-left">
+
+        <h1>Free Books</h1>
+
+        <p>Gurgaon</p>
+
+    </div>
+
+    <div class="header-right">
+
+        <button>🔍</button>
+
+        <button>+</button>
+
+        <button>👤</button>
+
+    </div>
+
+</header>
+
 <section
     class="hero-section"
     id="hero-section"
 >
 
     <button class="back-btn">
-        ←
+        <img src="./assets/icons/back-btn.png"
+              alt="back button"
+              class="back-btn-icon">
     </button>
 
     <button class="share-btn">
-        ↗
+        <img src="./assets/icons/share-btn.png"
+              alt="share button"
+              class="share-btn-icon">
     </button>
 
     <div class="hero-left">
@@ -173,8 +199,20 @@ bookDetails.innerHTML = `
         </div>
 
         <div class="pill">
-            ⭐ ${book.rating}
+           ${(book.amazonRating * 20).toFixed(0)}% 👍
         </div>
+
+        <div class="pill reviewers-pill">
+
+           <span class="review-count">
+              7,56,555
+           </span>
+
+           <span class="review-label">
+              reviewers
+            </span>
+
+          </div>
 
     </div>
 
@@ -187,6 +225,175 @@ bookDetails.innerHTML = `
     <p>by ${book.author}</p>
 
 </section>
+
+<button class="borrow-btn">
+    Borrow
+</button>
+
+<section class="detail-section">
+
+    <div class="section-title">
+
+        <h2>About</h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+    <p>
+        Description unavailable in dataset.
+    </p>
+
+</section>
+
+<section class="detail-section">
+
+    <div class="section-title">
+
+        <h2>Author</h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+    <p>
+        ${book.author}
+    </p>
+
+</section>
+
+<section class="details-section">
+
+<div class="section-title">
+
+<h2>Publisher</h2>
+<div class="section-line"></div>
+
+</div>
+
+<p>${book.publisher}</p>
+
+
+</section>
+
+<section class="detail-section">
+
+    <div class="section-title">
+
+        <h2>ISBN</h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+    <p>
+        ISBN-10: ${book.isbn10}
+    </p>
+
+    <p>
+        ISBN-13: ${book.isbn13}
+    </p>
+
+</section>
+
+<section class="detail-section">
+
+    <div class="section-title">
+
+        <h2>Review Summary</h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+    <div class="review-summary">
+
+        <div class="review-score">
+            ⭐ ${book.rating}
+        </div>
+
+        <div class="review-placeholder">
+            Review insights coming soon
+        </div>
+
+    </div>
+
+</section>
+
+<section class="detail-section">
+
+    <div class="section-title">
+
+        <h2>Tags</h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+    <div class="tags-container">
+
+        ${book.genre
+            .split(",")
+            .map(
+                genre =>
+                    `<span class="tag">
+                        ${genre.trim()}
+                    </span>`
+            )
+            .join("")}
+
+    </div>
+
+</section>
+
+<section class="detail-section">
+
+    <div class="section-title">
+
+        <h2>Libraries</h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+    <div class="libraries-list">
+
+        <div class="library-card">
+            Library information unavailable
+        </div>
+
+    </div>
+
+</section>
+
+<nav class="bottom-nav">
+
+    <div class="nav-item">
+        <span>📖</span>
+        <p>read</p>
+    </div>
+
+    <div class="nav-item active-nav">
+        <span>📚</span>
+        <p>borrow</p>
+    </div>
+
+    <div class="nav-item">
+        <span>🗺️</span>
+        <p>explore</p>
+    </div>
+
+    <div class="nav-item">
+        <span>👥</span>
+        <p>meets</p>
+    </div>
+
+    <div class="nav-item">
+        <span>💬</span>
+        <p>chat</p>
+    </div>
+
+</nav>
 
 `;
 
