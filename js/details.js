@@ -307,7 +307,21 @@ bookDetails.innerHTML = `
 
 </div>
 
-<p>${book.publisher}</p>
+<div class="publisher-logos">
+
+        <img
+            src="./assets/images/publisher1.png"
+            alt="Solaris"
+            class="publisher-logo solaris-logo"
+        >
+
+        <img
+            src="./assets/images/publisher2.png"
+            alt="Rebellion Publishing"
+            class="publisher-logo rebellion-logo"
+        >
+
+    </div>
 
 
 </section>
@@ -322,13 +336,38 @@ bookDetails.innerHTML = `
 
     </div>
 
-    <p>
-        ISBN-10: ${book.isbn10}
-    </p>
+   <div class="isbn-container">
 
-    <p>
-        ISBN-13: ${book.isbn13}
-    </p>
+        <div class="isbn-card">
+
+            <h3>ISBN-10</h3>
+
+            <img
+                src="./assets/icons/barcode.png"
+                alt=""
+                class="barcode"
+            >
+
+            <p>${book.isbn10}</p>
+
+        </div>
+
+        <div class="isbn-card">
+
+            <h3>ISBN-13</h3>
+
+            <img
+                src="./assets/icons/barcode.png"
+                alt=""
+                class="barcode"
+            >
+
+            <p>${book.isbn13}</p>
+
+        </div>
+
+    </div>
+
 
 </section>
 
