@@ -35,6 +35,18 @@ body {
     font-family: 'Helvetica', sans-serif;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 12px 10px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    
+}
+
 .hero-section{
     position: relative;
     padding: 28px 12px 20px;
