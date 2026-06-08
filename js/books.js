@@ -15,14 +15,15 @@ const books = [
         amazonRating: 4.6,
         weightG: 324,
         dimension: "129 x 197 x 32 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780007356348.jpg?updatedAt=1769065676118"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780007356348.jpg?updatedAt=1769065676118",
+        publisherLogo: "./assets/images/4thestate.png"
     },
 
     {
         id: 2,
         title: "All the Light We Cannot See",
         author: "Anthony Doerr",
-        publisher:"4th Estate",
+        publisher:"Fourth Estate",
         isbn10: "8172420",
         isbn13: "9780008172428",
         binding: "Paperback",
@@ -34,7 +35,8 @@ const books = [
         amazonRating: 4.6,
         weightG: 410,
         dimension: "129 x 197 x 35 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780008172428.jpg?updatedAt=1769065676141"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780008172428.jpg?updatedAt=1769065676141",
+        publisherLogo: "./assets/images/4thestate.png"
     },
 
     {
@@ -53,7 +55,8 @@ const books = [
         amazonRating: 4.6,
         weightG: 420,
         dimension: "129 x 198 x 38 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099448778.jpg?updatedAt=1769065676311"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099448778.jpg?updatedAt=1769065676311",
+        publisherLogo: "./assets/images/vintage.png"
     },
 
     {
@@ -72,7 +75,8 @@ const books = [
         amazonRating: 4.5,
         weightG: 320,
         dimension: "129 x 198 x 25 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099448785.jpg?updatedAt=1769065675952"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099448785.jpg?updatedAt=1769065675952",
+        publisherLogo: "./assets/images/vintage.png"
     },
 
     {
@@ -91,7 +95,8 @@ const books = [
         amazonRating: 4.6,
         weightG: 410,
         dimension: "129 x 198 x 33 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099458326.jpg?updatedAt=1769065676787"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099458326.jpg?updatedAt=1769065676787",
+        publisherLogo: "./assets/images/vintage.png"
     },
 
     {
@@ -110,7 +115,8 @@ const books = [
         amazonRating: 4.5,
         weightG: 240,
         dimension: "129 x 198 x 20 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099524687.jpg?updatedAt=1769065676475"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099524687.jpg?updatedAt=1769065676475",
+        publisherLogo: "./assets/images/vintage.png"
     },
 
     {
@@ -129,7 +135,8 @@ const books = [
         amazonRating: 4.6,
         weightG: 110,
         dimension: "129 x 198 x 10 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099559245.jpg?updatedAt=1769065676408"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099559245.jpg?updatedAt=1769065676408",
+        publisherLogo: "./assets/images/vintage.png"
     },
 
     {
@@ -148,7 +155,8 @@ const books = [
         amazonRating: 4.7,
         weightG: 410,
         dimension: "130 x 198 x 37 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099981909.jpeg?updatedAt=1769065676491"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780099981909.jpeg?updatedAt=1769065676491",
+        publisherLogo: "./assets/images/vintage.png"
     },
 
     {
@@ -167,7 +175,8 @@ const books = [
         amazonRating: 4.7,
         weightG: 225,
         dimension: "129 x 198 x 20 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780143425571.jpg?updatedAt=1769065676641"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780143425571.jpg?updatedAt=1769065676641",
+        publisherLogo: "./assets/images/penguin.png"
     },
 
     {
@@ -186,7 +195,8 @@ const books = [
         amazonRating: 4.2,
         weightG: 160,
         dimension: "132 x 203 x 15 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780345806871.jpeg?updatedAt=1769065676418"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780345806871.jpeg?updatedAt=1769065676418",
+        publisherLogo: "./assets/images/vintage.png"
     },
 
     {
@@ -205,7 +215,8 @@ const books = [
         amazonRating: 4.3,
         weightG: 246,
         dimension: "129 x 198 x 23 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780571334650.jpg?updatedAt=1769065676436"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780571334650.jpg?updatedAt=1769065676436",
+        publisherLogo: "./assets/images/ff.png"
     },
 
     {
@@ -224,7 +235,8 @@ const books = [
         amazonRating: 4,
         weightG: 310,
         dimension: "129 x 198 x 25 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780571338757.jpeg?updatedAt=1769065676483"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780571338757.jpeg?updatedAt=1769065676483",
+        publisherLogo: "./assets/images/ff.png"
     },
 
     {
@@ -243,7 +255,8 @@ const books = [
         amazonRating: 4.3,
         weightG: 490,
         dimension: "145 x 222 x 34 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780670093380.jpg?updatedAt=1769065676431"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9780670093380.jpg?updatedAt=1769065676431",
+        publisherLogo: "./assets/images/chattowindus.webp"
     },
 
 
@@ -263,7 +276,8 @@ const books = [
         amazonRating: 4.3,
         weightG: 440,
         dimension: "155 x 234 x 30 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9781416578796.jpeg?updatedAt=1769065676421"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9781416578796.jpeg?updatedAt=1769065676421",
+        publisherLogo: "./assets/images/simonschuster.svg"
     },
 
     {
@@ -282,7 +296,8 @@ const books = [
         amazonRating: 4.6,
         weightG: 280,
         dimension: "129 x 198 x 26 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9781416578796.jpeg?updatedAt=1769065676421"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9781416578796.jpeg?updatedAt=1769065676421",
+        publisherLogo: "./assets/images/bloomsbury.jpg"
     },
 
     {
@@ -301,7 +316,8 @@ const books = [
         amazonRating: 4.7,
         weightG: 848,
         dimension: "129 x 198 x 40 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9781780935379.jpg?updatedAt=1769065676534"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9781780935379.jpg?updatedAt=1769065676534",
+        publisherLogo: "./assets/images/bloomsbury.jpg"
     },
 
     {
@@ -320,7 +336,8 @@ const books = [
         amazonRating: 4.1,
         weightG: 400,
         dimension: "129 x 198 x 32 mm",
-        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9781780935379.jpg?updatedAt=1769065676534"
+        image: "https://ik.imagekit.io/bookminers/TrialBookCovers/9781780935379.jpg?updatedAt=1769065676534",
+        publisherLogo: "./assets/images/granta.jpg"
     },
     
 ];
